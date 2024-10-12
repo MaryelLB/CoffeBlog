@@ -42,9 +42,10 @@
     <main class="blog">
         <h3>Nuestro blog</h3>
         <article class="entrada">
-            <div class="entrada__imagen">
+            <picture>
+                <source loading="lazy" srcset="img/blog1.webp" type="image/webp">
                 <img loading="lazy" src="img/blog1.jpg" alt="blog1">
-            </div>
+            </picture>
             <div class="entrada__contenido">
                 <h4 class="no-margin">Tipos de Grano de Café</h4>
                 <p class="justificar-texto">Lorem, ipsum dolor sit amet consectetur adipisicing
@@ -56,9 +57,10 @@
         </article> <!--Article-->
 
         <article class="entrada">
-            <div class="entrada__imagen">
-                <img loading="lazy" src="img/blog2.jpg" alt="blog1">
-            </div>
+            <picture>
+                <source loading="lazy" srcset="img/blog2.webp" type="image/webp">
+                <img loading="lazy" src="img/blog2.jpg" alt="blog2">
+            </picture>
             <div class="entrada__contenido">
                 <h4 class="no-margin">3 Deliciosas recetas de café</h4>
                 <p class="justificar-texto">Lorem, ipsum dolor sit amet consectetur adipisicing
@@ -70,9 +72,10 @@
         </article> <!--Article -->
 
         <article class="entrada">
-            <div class="entrada__imagen">
-                <img loading="lazy" src="img/blog3.jpg" alt="blog1">
-            </div>
+            <picture>
+                <source loading="lazy" srcset="img/blog3.webp" type="image/webp">
+                <img loading="lazy" src="img/blog3.jpg" alt="blog3">
+            </picture>
             <div class="entrada__contenido">
                 <h4 class="no-margin">Beneficios del café</h4>
                 <p class="justificar-texto">Lorem, ipsum dolor sit amet consectetur adipisicing
@@ -125,5 +128,6 @@
         </div>
     </div>
 </footer>
+<script src="js/modernizr.js"></script>
 </body>
 </html>
