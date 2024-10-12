@@ -19,7 +19,6 @@ body {
     font-size: 1.6rem;
     line-height: 2;
 }
-
 /*GLOBALES*/
 .contenedor {
     width: min(90%, 120rem);
@@ -56,6 +55,9 @@ img {
 }
 .centrar-texto {
     text-align: center;
+}
+.justificar-texto {
+    text-align: justify;
 }
 /*Header*/
 .header {
@@ -132,6 +134,10 @@ img {
     text-transform: uppercase;
     font-weight: bold;
     margin-bottom: 2rem;
+    border: none;
+}
+.boton:hover {
+    cursor: pointer;
 }
 @media (min-width:768px) {
     .boton {
@@ -206,32 +212,39 @@ img {
 .curso:last-of-type {
     border: none;
 }
-
 /*Entrada Blog*/
 .entrada-blog {
     justify-content: center;
     text-align: justify;
 }
-
 /*Contacto*/
 .contacto-bg {
     background-image: url(../img/contacto.jpg);
-    height: 40rem;
+    height: 30rem;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .formulario {
-
+    background-color: var(--blanco);
+    margin: -5rem auto 0 auto;
+    width: 95%;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 .campo {
-
+    display: flex;
+    margin-bottom: 2rem;
+    gap: 2rem;
 }
 .campo__label {
-
+    flex: 0 0 9rem;
+    text-align: right;
 }
 .campo__field {
-
+    flex: 1;
+    border: 1px solid var(--gris)
 }
 .campo__field--textarea {
-    
+    height: 20rem;
 }
